@@ -24,3 +24,15 @@ def password():
         Debe contener un numero
     """
     pass
+
+    contraseña = input()
+
+
+    if len(contraseña) < 8:
+        print("Contraseña muy corta")
+    if not ("0" in contraseña or "1" in contraseña or "2" in contraseña or "3" in contraseña or "4" in contraseña or "5" in contraseña or "6" in contraseña or "7" in contraseña or "8" in contraseña or "9" in contraseña):
+        print("Debe contener un numero")
+    if len(contraseña) < 8 and not ("0" in contraseña or "1" in contraseña or "2" in contraseña or "3" in contraseña or "4" in contraseña or "5" in contraseña or "6" in contraseña or "7" in contraseña or "8" in contraseña or "9" in contraseña):
+        print("Contraseña muy corta") and print("Debe contener un numero")
+    else:
+        print("Contraseña valida")
